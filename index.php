@@ -23,6 +23,21 @@
             <option value="custom">Custom</option>
         </select><br><br>
 
+        <div id="custom-level" style="display: none;">
+            <label for="custom_min">Custom Min:</label>
+            <input type="number" name="custom_min" min="1" max="100"><br>
+            <label for="custom_max">Custom Max:</label>
+            <input type="number" name="custom_max" min="1" max="100"><br>
+        </div>
+
+        <label for="operation">Choose Operation:</label>
+        <select name="operation" required>
+            <option value="add">Addition</option>
+            <option value="sub">Subtraction</option>
+            <option value="mul">Multiplication</option>
+            <option value="div">Division</option>
+        </select><br><br>
+
         <label for="questions">Number of Questions:</label>
         <input type="number" name="questions" value="10" min="1" max="20" required><br><br>
 
