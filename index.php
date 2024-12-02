@@ -12,7 +12,27 @@
     <form action="quiz.php" method="POST">
         <label for="name">Enter your name:</label>
         <input type="text" name="name" required><br><br>
-        
+
         <label for="level">Select Level:</label>
+        <select name="level" required>
+            <option value="1-10">Level 1 (1-10)</option>
+            <option value="11-100">Level 2 (11-100)</option>
+            <option value="custom">Custom</option>
+        </select><br><br>
+
+        <label for="questions">Number of Questions:</label>
+        <input type="number" name="questions" value="10" min="1" max="20" required><br><br>
+
+        <button type="submit">Start Quiz</button>
+    </form>
+
 </body>
+<script>
+    const levelSelector = document.querySelector('select[name="level"]');
+    const customLevel = document.getElementById('custom-level');
+
+    levelSelector.addEventListener('change', function() {
+            customLevel.style.display = this.value === 'custom' ? 'block' : 'none';
+        });
+</script>
 </html>
