@@ -63,6 +63,7 @@ while (count($choices) < 4) {
         $choices[] = $choice;
     }
 }
+
 shuffle($choices);
 
 ?>
