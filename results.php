@@ -19,14 +19,16 @@ session_start();
     </style>
 <body>
 <div class="container-fluid p-5 bg-primary text-white text-center">
-    <h1>Quiz Results</h1>
-    <p>Name: <?php echo $_SESSION['name']; ?></p>
-    <p>Total Number of Questions: <?php echo $_SESSION['questions']; ?></p>
-    <p>Your Correct Answer/s: <?php echo $_SESSION['correct']; ?></p>
-    <p>Your Wrong Answer/s: <?php echo $_SESSION['wrong']; ?></p>
-</div>
-<div id="color">
-    <a href="index.php">Try Again</a>
+    <div class="container col-sm-2">
+        <h1>Quiz Results</h1>
+        <p>Name: <?php echo $_SESSION['name']; ?></p>
+        <p>Total Number of Questions: <?php echo $_SESSION['questions']; ?></p>
+        <p>Your Correct Answer/s: <?php echo $_SESSION['correct']; ?></p>
+        <p>Your Wrong Answer/s: <?php echo $_SESSION['wrong']; ?></p>
+    <div id="color">
+        <a href="index.php">Try Again</a>
+    </div>
+    </div>
 </div>
 </body>
 </html>
